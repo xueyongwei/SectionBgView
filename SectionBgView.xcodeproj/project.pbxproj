@@ -12,6 +12,8 @@
 		47AFD8CD2240EC8C00A82C15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47AFD8CB2240EC8C00A82C15 /* Main.storyboard */; };
 		47AFD8CF2240EC8E00A82C15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47AFD8CE2240EC8E00A82C15 /* Assets.xcassets */; };
 		47AFD8D22240EC8E00A82C15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47AFD8D02240EC8E00A82C15 /* LaunchScreen.storyboard */; };
+		47AFD8DA2240EC9A00A82C15 /* TestCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AFD8D92240EC9A00A82C15 /* TestCollectionViewController.swift */; };
+		47AFD8DD2240ED1000A82C15 /* YRbcsFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AFD8DC2240ED1000A82C15 /* YRbcsFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		47AFD8CE2240EC8E00A82C15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47AFD8D12240EC8E00A82C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47AFD8D32240EC8E00A82C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47AFD8D92240EC9A00A82C15 /* TestCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewController.swift; sourceTree = "<group>"; };
+		47AFD8DC2240ED1000A82C15 /* YRbcsFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YRbcsFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		47AFD8C62240EC8C00A82C15 /* SectionBgView */ = {
 			isa = PBXGroup;
 			children = (
+				47AFD8DB2240ECEA00A82C15 /* YuriSectionColorLayout */,
 				47AFD8C72240EC8C00A82C15 /* AppDelegate.swift */,
 				47AFD8C92240EC8C00A82C15 /* ViewController.swift */,
+				47AFD8D92240EC9A00A82C15 /* TestCollectionViewController.swift */,
 				47AFD8CB2240EC8C00A82C15 /* Main.storyboard */,
 				47AFD8CE2240EC8E00A82C15 /* Assets.xcassets */,
 				47AFD8D02240EC8E00A82C15 /* LaunchScreen.storyboard */,
 				47AFD8D32240EC8E00A82C15 /* Info.plist */,
 			);
 			path = SectionBgView;
+			sourceTree = "<group>";
+		};
+		47AFD8DB2240ECEA00A82C15 /* YuriSectionColorLayout */ = {
+			isa = PBXGroup;
+			children = (
+				47AFD8DC2240ED1000A82C15 /* YRbcsFlowLayout.swift */,
+			);
+			path = YuriSectionColorLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47AFD8DD2240ED1000A82C15 /* YRbcsFlowLayout.swift in Sources */,
 				47AFD8CA2240EC8C00A82C15 /* ViewController.swift in Sources */,
+				47AFD8DA2240EC9A00A82C15 /* TestCollectionViewController.swift in Sources */,
 				47AFD8C82240EC8C00A82C15 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

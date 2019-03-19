@@ -15,6 +15,20 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    
+    @IBAction func onBtnClick(_ sender: UIButton) {
+        
+        let layout = YRbcsFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.sectionInset = UIEdgeInsets.init(top: 20, left: 15, bottom: 20, right: 15)
+        layout.itemSize = CGSize.init(width: 200, height: 200)
+        layout.fillModel = .fullSection
+        layout.sectionCornerRadius = 5
+        
+        let vc = TestCollectionViewController.init(collectionViewLayout: layout)
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
 }
 
